@@ -17,7 +17,7 @@ $primary-color: #567;
 }
 
 @mixin mediaLg {
-  @media screen and (max-width: 900px)  {
+  @media screen and (min-width: 835px) and(max-width: 1000px)  {
     @content;
   }
 }

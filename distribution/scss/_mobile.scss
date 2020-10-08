@@ -1,6 +1,8 @@
 // Smartphones
 @include mediaSm {
-
+  .navbar ul li {
+    margin: 0;
+  }
   .navbar {
     background: none;
   }
@@ -40,7 +42,8 @@
 
   .mid-container-about {
     grid-gap: 30px;
-    padding-bottom: 4em;
+
+    padding: 0 0 4em;
     grid-template-areas:
     'bo4'
     'bo3';
@@ -88,8 +91,13 @@
     margin-left: 0;
   }
 
-  .animation h1 {
-    font-size: 1rem;
+  .animation {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2{
+      font-size: 1rem;
+    }
   }
 
   .navbar ul {
@@ -104,6 +112,7 @@
     visibility: visible;
   }
 }
+
 @include mediaMd{
   .navbar ul li {
     margin: 0 0.5rem;
@@ -196,8 +205,13 @@
     margin-left: 0;
   }
 
-  .animation h1 {
-    font-size: 1rem;
+  .animation {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2{
+      font-size: 1rem;
+    }
   }
 
   .navbar ul {
@@ -212,7 +226,6 @@
     visibility: visible;
   }
 }
-
 
 @include mediaLg{
   .navbar ul li {

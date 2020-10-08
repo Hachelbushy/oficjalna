@@ -22,7 +22,7 @@
   list-style: none; }
 
 .navbar ul li {
-  margin: 0 2rem;
+  margin: 0 2.5rem;
   padding: 1rem; }
 
 .navbar ul li a {
@@ -61,6 +61,8 @@ a {
       transform: rotate(-45deg) translate(7px, -6px); }
 
 @media screen and (max-width: 600px) {
+  .navbar ul li {
+    margin: 0; }
   .navbar {
     background: none; }
   .navbar ul {
@@ -90,7 +92,7 @@ a {
     padding-left: 1rem; }
   .mid-container-about {
     grid-gap: 30px;
-    padding-bottom: 4em;
+    padding: 0 0 4em;
     grid-template-areas: 'bo4' 'bo3'; }
     .mid-container-about .box3 {
       grid-area: bo3; }
@@ -115,6 +117,8 @@ a {
   .contact-box .box .text-header {
     margin-left: 0; }
   .animation h1 {
+    font-size: 1.5rem; }
+  .animation h2 {
     font-size: 1rem; }
   .navbar ul {
     visibility: hidden; }
@@ -180,6 +184,8 @@ a {
   .contact-box .box .text-header {
     margin-left: 0; }
   .animation h1 {
+    font-size: 1.5rem; }
+  .animation h2 {
     font-size: 1rem; }
   .navbar ul {
     visibility: hidden; }
@@ -188,7 +194,7 @@ a {
   .btn-line {
     visibility: visible; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 835px) and (max-width: 1000px) {
   .navbar ul li {
     margin: 0 1.5rem; } }
 
@@ -249,6 +255,7 @@ section {
   grid-row-gap: 70px; }
 
 .top-container-box {
+  display: grid;
   text-align: center;
   grid-template-columns: repeat(1, 6fr);
   grid-auto-rows: minmax(100px, auto);
@@ -259,7 +266,8 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   grid-column-gap: 20px;
-  text-align: left; }
+  text-align: left;
+  padding: 5em; }
   .mid-container-about #portrait-img {
     width: 350px;
     height: 350px; }
@@ -284,7 +292,8 @@ section {
   justify-self: center; }
 
 .box3 {
-  background: #edebeb; }
+  align-self: center;
+  justify-self: center; }
 
 .box8 {
   align-self: center; }
@@ -571,6 +580,8 @@ section {
     transform: translateY(0); } }
 
 @media screen and (max-width: 600px) {
+  .navbar ul li {
+    margin: 0; }
   .navbar {
     background: none; }
   .navbar ul {
@@ -600,7 +611,7 @@ section {
     padding-left: 1rem; }
   .mid-container-about {
     grid-gap: 30px;
-    padding-bottom: 4em;
+    padding: 0 0 4em;
     grid-template-areas: 'bo4' 'bo3'; }
     .mid-container-about .box3 {
       grid-area: bo3; }
@@ -625,6 +636,8 @@ section {
   .contact-box .box .text-header {
     margin-left: 0; }
   .animation h1 {
+    font-size: 1.5rem; }
+  .animation h2 {
     font-size: 1rem; }
   .navbar ul {
     visibility: hidden; }
@@ -690,6 +703,8 @@ section {
   .contact-box .box .text-header {
     margin-left: 0; }
   .animation h1 {
+    font-size: 1.5rem; }
+  .animation h2 {
     font-size: 1rem; }
   .navbar ul {
     visibility: hidden; }
@@ -698,6 +713,6 @@ section {
   .btn-line {
     visibility: visible; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 835px) and (max-width: 1000px) {
   .navbar ul li {
     margin: 0 1.5rem; } }
