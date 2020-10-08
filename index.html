@@ -15,6 +15,10 @@
 <body>
 <main>
     <header id="home">
+                <div class="langWrap">
+                    <a href="#" lang="polish" class="active">PL</a>
+                    <a href="#" lang="english">EN</a>
+                </div>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -22,25 +26,26 @@
         </div>
 
         <nav class="navbar">
+
             <ul class="menu-nav">
-                <li class="nav-item"><a href="#home" class="nav-link">Strona główna</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">O Mnie</a></li>
-                <li class="nav-item"><a href="#service" class="nav-link">Usługi</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link" id="navLinkHome">Strona główna</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" id="navLinkAbout">O Mnie</a></li>
+                <li class="nav-item"><a href="#service" class="nav-link" id="navLinkServ">Usługi</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link" id="navLinkPort">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" id="navLinkCont">Kontakt</a></li>
             </ul>
         </nav>
 
         <div class="intro">
             <div class="intro-text">
                 <h1 class="hide">
-                    <span class="text">Kreator</span>
+                    <span class="text">The Creator</span>
                 </h1>
                 <h1 class="hide">
-                    <span class="text">Twoich</span>
+                    <span class="text">of Your</span>
                 </h1>
                 <h1 class="hide">
-                    <span class="text">myśli.</span>
+                    <span class="text">Thoughts.</span>
                 </h1>
             </div>
         </div>
@@ -57,7 +62,7 @@
                     <span class="txt-type" data-wait="3000"
                           data-words='["Web Developer", "Designer", "Creator"]'></span>
                 </h1>
-                <h2>Welcome To My Website</h2>
+                <h2 class="smHeading">Witaj Na Mojej Stronie</h2>
                 <div class="media-icons">
                     <a class="icons-me" href="https://www.instagram.com/mzakrzewski_dev/" target="_blank">
                         <i class="fab fa-instagram fa-5x"></i>
@@ -85,13 +90,13 @@
             <div class="top-container-box">
                 <div class="box1">
                     <div class="section-header">
-                        <h2>O Mnie</h2>
+                        <h2 id="aboutHeading">O Mnie</h2>
                         <div class="border"></div>
                     </div>
                 </div>
 
                 <div class="box2 animate-top">
-                    <h3 class="about-header">
+                    <h3 class="about-header" id="aboutTxt">
                         Pozwól, że przedstawię Ci kilka rzeczy o mnie...
                     </h3>
                 </div>
@@ -99,12 +104,12 @@
 
             <div class="mid-container-about">
                 <div class="box3 animate-left">
-                    <h3>Nazywam się Mateusz Zakrzewski.</h3>
-                    <p>Od przeszło roku, kształcę się w dziedzinie
+                    <h3 id="nameLine">Nazywam się Mateusz Zakrzewski.</h3>
+                    <p id="aboutMainTxt">Od przeszło roku, kształcę się w dziedzinie
                         programowania. Podnoszę swoje kompetencje w: JavaScript, HTML, CSS oraz Java.
                         Moim celem jest stała praca, która pozwoli mi wykorzystać nabytą wiedzę i rozwijać umiejętności.
                     </p>
-                    <p>
+                    <p id="aboutMainTxt2">
                         Obejmowałem stanowisko project managera w Norwegii, w firmie
                         dostarczającej pełne spektrum usług telekomunikacyjnych. Mam pięcioletnie
                         doświadczenie jako Team Leader firma wchodzących na rynek międzynarodowy. Posiadam
@@ -122,7 +127,7 @@
 
             <div class="bottom-container-about">
                 <div class="box5 animate-bottom">
-                    <h2>Wykorzystywane technologie</h2>
+                    <h2 id="usedTechTxt">Wykorzystywane technologie</h2>
                     <div class="border" id="border-tech"></div>
                 </div>
             </div>
@@ -158,7 +163,7 @@
         <div class="wrapper service-wrapper">
             <div class="top-container-box">
                 <div class="section-header">
-                    <h2>Moje Usługi</h2>
+                    <h2 id="serviceHeading">Moje Usługi</h2>
                     <div class="border" id="border-service"></div>
                 </div>
             </div>
@@ -170,7 +175,7 @@
                             <i class="fas fa-pencil-ruler"></i>
                         </div>
                         <div class="service-title">Web Designs</div>
-                        <div class="service-desc">
+                        <div class="service-desc" id="servDescWDs">
                             Projektowanie stron internetowych według wizji klienta.
                         </div>
                     </div>
@@ -182,7 +187,7 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <div class="service-title">Web Development</div>
-                        <div class="service-desc">
+                        <div class="service-desc" id="servDescWDt">
                             Utrzymanie strony i poczty email.
                         </div>
                     </div>
@@ -194,7 +199,7 @@
                             <i class="fas fa-crop"></i>
                         </div>
                         <div class="service-title">Responsive Designs</div>
-                        <div class="service-desc">
+                        <div class="service-desc" id="servDescRD">
                             Tworzenie stron internetowych, których rozmiar dostosowuje się do wielkości ekranu, na
                             których jest wyświetlany.
                         </div>
@@ -207,9 +212,8 @@
                             <i class="fas fa-align-left"></i>
                         </div>
                         <div class="service-title">Section Editing</div>
-                        Edycja sekcji w opraciu o nową treść.
-                        <div class="service-desc">
-
+                        <div class="service-desc" id="servDescSE">
+                            Edycja sekcji w opraciu o nową treść.
                         </div>
                     </div>
                 </div>
@@ -220,8 +224,8 @@
                             <i class="fas fa-file-image"></i>
                         </div>
                         <div class="service-title">Logo Design</div>
-                        <div class="service-desc">
-                            Opracowanie logo które jest podstawowy element identyfikacji wizualnej.
+                        <div class="service-desc" id="servDescLD">
+                            Opracowanie logo, które jest podstawowy element identyfikacji wizualnej.
                         </div>
                     </div>
                 </div>
@@ -255,15 +259,15 @@
         <div class="wrapper contact-wrapper">
             <div class="top-container-box">
                 <div class="section-header">
-                    <h2>Kontakt</h2>
+                    <h2 id="contactHeading">Kontakt</h2>
                     <div class="border" id="border-contact"></div>
-                    <h3>Co mogę dla Ciebie zrobić, chcesz zacząć współpracę? Śmiało, daj mi znać.</h3>
+                    <h3 id="contactDesc">Co mogę dla Ciebie zrobić, chcesz zacząć współpracę? Śmiało, daj mi znać.</h3>
                 </div>
             </div>
 
             <div class="contact-info-box">
                 <div class="contact-box">
-                    <h3>Informacje Kontaktowe</h3>
+                    <h3 id="contactInfo">Informacje Kontaktowe</h3>
                     <!--                    <div class="box">-->
                     <!--                        <div class="icon">-->
                     <!--                            <i class="fa fa-map-marker"></i>-->
@@ -279,7 +283,7 @@
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="text-header">
-                            <h3>Telefon</h3>
+                            <h3 id="contactPhone">Telefon</h3>
                             <p>(+48) 504-259-356)</p>
                         </div>
                     </div>
@@ -288,7 +292,7 @@
                             <i class="fa fa-envelope"></i>
                         </div>
                         <div class="text-header">
-                            <h3>Adres mailowy</h3>
+                            <h3 id="contactMail">Adres mailowy</h3>
                             <p>mateuszzakrzewskipl@gmail.com</p>
                         </div>
                     </div>
@@ -297,11 +301,11 @@
                 <div class="form-box">
                     <form action="mailto:mateuszzakrzewskipl@gmail.com"
                           method="post" enctype="text/plain">
-                        <h3>Wyślij Wiadomość</h3>
-                        <input type="text" name="Imie" placeholder="Imię i Nazwisko">
+                        <h3 id="contactSendMsg">Wyślij Wiadomość</h3>
+                        <input type="text" name="Imie" placeholder="Full name">
                         <input type="email" name="Mail" placeholder="Email">
-                        <textarea name="Tekst" placeholder="Twoja Wiadomość"></textarea>
-                        <input type="submit" value="Wyślij">
+                        <textarea name="Tekst" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
                     </form>
                 </div>
             </div>

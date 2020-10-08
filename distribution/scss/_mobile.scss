@@ -1,10 +1,18 @@
 // Smartphones
 @include mediaSm {
+  .langWrap {
+    z-index: 2;
+  }
+
+  .menu-nav {
+    z-index: 3;
+  }
   .navbar ul li {
     margin: 0;
   }
   .navbar {
     background: none;
+    transform: translate3d(0, -100%, 0);
   }
   .navbar ul {
     position: absolute;
@@ -95,7 +103,8 @@
     h1 {
       font-size: 1.5rem;
     }
-    h2{
+
+    h2 {
       font-size: 1rem;
     }
   }
@@ -113,13 +122,21 @@
   }
 }
 
-@include mediaMd{
+@include mediaMd {
+
+  .menu-nav {
+    z-index: 3;
+  }
+  .langWrap {
+    z-index: 1;
+  }
   .navbar ul li {
     margin: 0 0.5rem;
   }
 
   .navbar {
     background: none;
+    transform: translate3d(0, -100%, 0);
   }
   .navbar ul {
     position: absolute;
@@ -209,7 +226,8 @@
     h1 {
       font-size: 1.5rem;
     }
-    h2{
+
+    h2 {
       font-size: 1rem;
     }
   }
@@ -227,7 +245,7 @@
   }
 }
 
-@include mediaLg{
+@include mediaLg {
   .navbar ul li {
     margin: 0 1.5rem;
   }

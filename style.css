@@ -39,6 +39,18 @@ a {
 .active, .nav-link:hover {
   color: #008B8B; }
 
+.langWrap {
+  position: fixed;
+  top: 16px;
+  left: 5px;
+  z-index: 2; }
+
+.langWrap a {
+  color: burlywood; }
+
+.langWrap .active {
+  color: #008B8B; }
+
 .menu-btn {
   position: fixed;
   z-index: 10;
@@ -61,10 +73,15 @@ a {
       transform: rotate(-45deg) translate(7px, -6px); }
 
 @media screen and (max-width: 600px) {
+  .langWrap {
+    z-index: 2; }
+  .menu-nav {
+    z-index: 3; }
   .navbar ul li {
     margin: 0; }
   .navbar {
-    background: none; }
+    background: none;
+    transform: translate3d(0, -100%, 0); }
   .navbar ul {
     position: absolute;
     top: 0;
@@ -128,10 +145,15 @@ a {
     visibility: visible; } }
 
 @media screen and (max-width: 834px) {
+  .menu-nav {
+    z-index: 3; }
+  .langWrap {
+    z-index: 1; }
   .navbar ul li {
     margin: 0 0.5rem; }
   .navbar {
-    background: none; }
+    background: none;
+    transform: translate3d(0, -100%, 0); }
   .navbar ul {
     position: absolute;
     top: 0;
@@ -263,7 +285,7 @@ section {
 
 .mid-container-about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(100px, auto);
   grid-column-gap: 20px;
   text-align: left;
@@ -271,6 +293,10 @@ section {
   .mid-container-about #portrait-img {
     width: 350px;
     height: 350px; }
+  .mid-container-about h3 {
+    padding-bottom: 2rem; }
+  .mid-container-about p {
+    padding-bottom: 0.5rem; }
 
 #portrait-img {
   border-radius: 50%; }
@@ -299,6 +325,7 @@ section {
   align-self: center; }
 
 .box4 {
+  align-self: center;
   text-align: center; }
 
 .service-wrapper {
@@ -580,10 +607,15 @@ section {
     transform: translateY(0); } }
 
 @media screen and (max-width: 600px) {
+  .langWrap {
+    z-index: 2; }
+  .menu-nav {
+    z-index: 3; }
   .navbar ul li {
     margin: 0; }
   .navbar {
-    background: none; }
+    background: none;
+    transform: translate3d(0, -100%, 0); }
   .navbar ul {
     position: absolute;
     top: 0;
@@ -647,10 +679,15 @@ section {
     visibility: visible; } }
 
 @media screen and (max-width: 834px) {
+  .menu-nav {
+    z-index: 3; }
+  .langWrap {
+    z-index: 1; }
   .navbar ul li {
     margin: 0 0.5rem; }
   .navbar {
-    background: none; }
+    background: none;
+    transform: translate3d(0, -100%, 0); }
   .navbar ul {
     position: absolute;
     top: 0;

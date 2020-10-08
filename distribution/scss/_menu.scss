@@ -42,6 +42,23 @@ a {
   color: #008B8B;
 }
 
+
+.langWrap {
+  position:fixed;
+  top: 16px;
+  left: 5px;
+  z-index: 2;
+
+}
+
+.langWrap a{
+  color: burlywood;
+}
+
+.langWrap .active{
+  color: #008B8B;
+}
+
 .menu-btn {
   position: fixed;
   z-index: 10;
