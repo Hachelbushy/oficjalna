@@ -39,7 +39,7 @@ a {
 }
 
 .active ,.nav-link:hover{
-  color: #008B8B;
+  color: #ccc6a7;
 }
 
 
@@ -47,16 +47,15 @@ a {
   position:fixed;
   top: 16px;
   left: 5px;
-  z-index: 2;
-
+  z-index: 3;
 }
 
 .langWrap a{
-  color: burlywood;
+  color: #989282;
 }
 
-.langWrap .active{
-  color: #008B8B;
+.langWrap .on{
+  color: #ccc6a7;
 }
 
 .menu-btn {
@@ -71,7 +70,7 @@ a {
     height: 3px;
     margin: 0 0 5px 0;
     @include easeOut;
-    background: #008B8B;
+    background: #989282;
   }
 
   // Rotate Into X With Menu Lines

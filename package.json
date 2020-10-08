@@ -2,7 +2,7 @@
   "name": "oficjalna",
   "version": "1.0.0",
   "description": "Oficjalna Strona WWW",
-  "main": "script.js",
+  "main": "scriptName.js",
   "scripts": {
     "sass": "node-sass -w distribution/scss/ -o --recursive"
   },

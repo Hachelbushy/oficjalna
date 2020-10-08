@@ -37,19 +37,19 @@ a {
   text-decoration: none; }
 
 .active, .nav-link:hover {
-  color: #008B8B; }
+  color: #ccc6a7; }
 
 .langWrap {
   position: fixed;
   top: 16px;
   left: 5px;
-  z-index: 2; }
+  z-index: 3; }
 
 .langWrap a {
-  color: burlywood; }
+  color: #989282; }
 
-.langWrap .active {
-  color: #008B8B; }
+.langWrap .on {
+  color: #ccc6a7; }
 
 .menu-btn {
   position: fixed;
@@ -62,7 +62,7 @@ a {
     height: 3px;
     margin: 0 0 5px 0;
     transition: all 0.5s ease-out;
-    background: #008B8B; }
+    background: #989282; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -87,7 +87,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +159,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -496,7 +496,7 @@ section {
   margin-bottom: 0; }
 
 .contact-box .box .icon .fa {
-  color: #008B8B; }
+  color: #82ccdd; }
 
 .fab {
   transition: transform .3s; }
@@ -511,7 +511,7 @@ section {
 .border {
   position: relative;
   height: 2px;
-  background: #008B8B;
+  background: #82ccdd;
   margin: 20px auto; }
 
 .video-container {
@@ -621,7 +621,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -693,7 +693,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
