@@ -1,0 +1,15 @@
+{
+  "name": "oficjalna",
+  "version": "1.0.0",
+  "description": "Oficjalna Strona WWW",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w distribution/scss/ -o --recursive"
+  },
+  "author": "Mateusz Zakrzewski",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.5.1",
+    "node-sass": "^4.14.1"
+  }
+}
